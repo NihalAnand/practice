@@ -42,3 +42,15 @@ dim_arr2 = np.array([[10,10],[10,10]])
 print("Transpose:\\n {0}\\n".format(np.transpose(dim_arr1)))
 print(f"Cross product:\\n {np.cross(dim_arr1,dim_arr2)}\\n")
 print(f"dot product:\\n {np.dot(dim_arr1,dim_arr2)}\\n")
+
+arr1 = np.array([1, 2, 3, 4])
+arr2 = arr1.copy()
+
+print(arr2 is arr1)
+
+arr2[0] = 2
+arr2[3] = 2
+arr2.shape = 2, 2
+print("arr1=",arr1)
+print("arr2=",arr2)
+
